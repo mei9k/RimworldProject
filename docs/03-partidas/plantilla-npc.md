@@ -1,4 +1,4 @@
-# Plantilla de NPC
+﻿# Plantilla de NPC
 
 ## Identidad
 
@@ -23,5 +23,6 @@
 
 ## Enlaces
 
-- [Facciones](../02-universo/03-facciones.md)
+- [Facciones](../02-universo/facciones.md)
 - [Plantilla de partida](plantilla-partida.md)
+

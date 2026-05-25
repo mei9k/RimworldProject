@@ -1,8 +1,8 @@
 ---
-title: "MCR"
+title: "mcr"
 ---
 
-# MCR
+﻿# MCR
 
 Motto: Hasta que llueva en el monte Olimpo.
 
@@ -10,5 +10,6 @@ La Martian Congressional Republic representa la perseverancia marciana, con una 
 
 ## Relación
 
-- [Cronología](../02-cronologia.md)
-- [Fundaciones](../04-fundaciones.md)
+- [Cronología](../cronologia.md)
+- [Fundaciones](../fundaciones.md)
+

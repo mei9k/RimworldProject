@@ -1,8 +1,8 @@
 ---
-title: "Plantilla de partida"
+title: "plantilla partida"
 ---
 
-# Plantilla de partida
+﻿# Plantilla de partida
 
 ## Resumen
 
@@ -22,4 +22,5 @@ title: "Plantilla de partida"
 
 - PCs: [plantilla-pc](plantilla-pc.md)
 - NPCs: [plantilla-npc](plantilla-npc.md)
-- Lore general: [universo](../02-universo/01-resumen.md)
+- Lore general: [universo](../02-universo/resumen.md)
+

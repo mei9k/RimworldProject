@@ -1,4 +1,4 @@
-# Naciones Unidas
+﻿# Naciones Unidas
 
 Motto: Paz, dignidad e igualdad.
 
@@ -6,5 +6,6 @@ La UN nació como una alianza unificadora de la humanidad en la Tierra y termin�
 
 ## Relación
 
-- [Cronología](../02-cronologia.md)
-- [Fundaciones](../04-fundaciones.md)
+- [Cronología](../cronologia.md)
+- [Fundaciones](../fundaciones.md)
+

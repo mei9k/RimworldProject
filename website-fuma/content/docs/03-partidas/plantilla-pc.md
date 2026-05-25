@@ -1,8 +1,8 @@
 ---
-title: "Plantilla de PC"
+title: "plantilla pc"
 ---
 
-# Plantilla de PC
+﻿# Plantilla de PC
 
 ## Identidad
 
@@ -29,5 +29,6 @@ title: "Plantilla de PC"
 
 ## Enlaces
 
-- [Creación de personajes](../01-sistema/02-creacion-de-personajes.md)
-- [Atributos y habilidades](../01-sistema/03-atributos-y-habilidades.md)
+- [Creación de personajes](../01-sistema/creacion-de-personajes.md)
+- [Atributos y habilidades](../01-sistema/atributos-y-habilidades.md)
+

@@ -1,8 +1,8 @@
 ---
-title: "Plantilla de NPC"
+title: "plantilla npc"
 ---
 
-# Plantilla de NPC
+﻿# Plantilla de NPC
 
 ## Identidad
 
@@ -27,5 +27,6 @@ title: "Plantilla de NPC"
 
 ## Enlaces
 
-- [Facciones](../02-universo/03-facciones.md)
+- [Facciones](../02-universo/facciones.md)
 - [Plantilla de partida](plantilla-partida.md)
+

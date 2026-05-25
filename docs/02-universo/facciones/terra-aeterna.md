@@ -1,4 +1,4 @@
-# Terra Aeterna
+﻿# Terra Aeterna
 
 Motto: Terra Aeterna.
 
@@ -6,5 +6,6 @@ Nació como resistencia en la Tierra y evolucionó hacia una estatocracia milita
 
 ## Relación
 
-- [Cronología](../02-cronologia.md)
-- [Fundaciones](../04-fundaciones.md)
+- [Cronología](../cronologia.md)
+- [Fundaciones](../fundaciones.md)
+

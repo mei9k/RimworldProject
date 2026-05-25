@@ -1,4 +1,4 @@
-# Glosario de efectos y estados
+﻿# Glosario de efectos y estados
 
 Referencia central de términos mecánicos usados en daño, curación, consumibles y drogas.
 
@@ -93,4 +93,4 @@ Necesidad compulsiva de repetir consumo o uso de sustancia/equipo. Puede generar
 
 ---
 
-Ver también: [Daño y curación](../06-danio-y-curacion.md), [Compendio de consumibles médicos](../10-compendio-consumibles-medicos.md), [Compendio de drogas](../11-compendio-drogas.md).
+Ver también: [Daño y curación](../danio-y-curacion.md), [Compendio de consumibles médicos](../compendio-consumibles-medicos.md), [Compendio de drogas](../compendio-drogas.md).
