@@ -1,0 +1,310 @@
+---
+title: "Compendio de consumibles médicos"
+---
+
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { MedicalHero, SummaryGrid, ToneNote, UsageGrid } from '@/components/medical-docs';
+import GlossaryTerm from '@/components/GlossaryTerm';
+
+# Compendio de consumibles médicos
+
+Catálogo de referencia para consumibles sanitarios en campaña.
+
+<MedicalHero />
+
+## Navegación rápida
+
+- [Introducción rápida](#introducción-rápida)
+- [Cómo se usan en partida](#cómo-se-usan-en-partida)
+- [Catálogo por familia](#catálogo-por-familia)
+- [Botiquines](#botiquines)
+- [Herramientas de trauma](#herramientas-de-trauma)
+- [Inyectores](#inyectores)
+- [Plantilla de consumible](#plantilla-de-consumible)
+- [Reglas de uso en combate y fuera de combate](#reglas-de-uso-en-combate-y-fuera-de-combate)
+
+Glosario de referencia: [Glosario de efectos y estados](glosario/efectos-y-estados.md).
+
+<SummaryGrid
+	items={[
+		{
+			label: 'Lectura rapida',
+			description: 'Que repara::Botiquines e inyectores recuperan capacidad inmediata. Las herramientas de trauma no siempre devuelven PV, pero evitan que la situacion empeore.',
+		},
+		{
+			label: 'Ritmo de uso',
+			description: 'Que entra en turno::En combate importa el coste de accion. Fuera de combate importa la disponibilidad, los usos restantes y la calidad del material.',
+		},
+		{
+			label: 'Riesgo',
+			description: 'Que te cobra despues::Cuanto mas rapido o potente sea un consumible, mas probable es que deje fatiga, dolor o secuelas de rendimiento al terminar el efecto.',
+		},
+	]}
+/>
+
+---
+
+## Introducción rápida
+
+En este sistema hay tres familias principales de consumibles médicos:
+
+- **Botiquines**: restauran PV mediante aplicación con material médico.
+- **Herramientas de trauma**: controlan estados concretos (<GlossaryTerm to="/docs/01-sistema/glosario/efectos-y-estados#sangrado" term="Sangrado" tooltip="Estado de hemorragia activa que empeora si no se trata." />, <GlossaryTerm to="/docs/01-sistema/glosario/efectos-y-estados#fractura" term="Fractura" tooltip="Lesion o rotura osea que impone penalizadores hasta estabilizacion." />, <GlossaryTerm to="/docs/01-sistema/glosario/efectos-y-estados#laceracion" term="Laceracion" tooltip="Herida profunda que puede seguir causando dano por turno." />).
+- **Inyectores**: efectos inmediatos, rápidos de aplicar, con posible coste secundario.
+
+<ToneNote tone="amber" title="Criterio de diseño">
+	Si un consumible hace varias cosas a la vez, decide cuál es su identidad principal: curar, estabilizar o empujar rendimiento. Evita objetos que resuelvan las tres sin coste claro.
+</ToneNote>
+
+## Cómo se usan en partida
+
+Cada consumible debe indicar claramente:
+
+- qué cura o estabiliza
+- cuánto tarda en hacer efecto
+- coste de acción en combate
+- dificultad de aplicación (si aplica)
+- efectos secundarios o limitaciones
+
+<UsageGrid
+	items={[
+		{ label: 'Mayor', description: 'Cuando usarla implica maniobra, aplicacion precisa o intervencion medica completa.' },
+		{ label: 'Menor', description: 'Cuando el objeto esta preparado para uso tactico rapido o autoaplicacion de emergencia.' },
+		{ label: 'Dificultad', description: 'No mide solo pericia; tambien mide presion, entorno hostil y estado del paciente.' },
+	]}
+/>
+
+---
+
+## Catálogo por familia
+
+<Accordions type="single" defaultValue="Botiquines" className="my-6">
+	<Accordion id="botiquines" title="Botiquines">
+		<p><strong>Uso típico:</strong></p>
+		<ul>
+			<li>Curan PV por uso.</li>
+			<li>Requieren aplicación médica (con o sin tirada, según situación).</li>
+			<li>Escalan por calidad: más usos, más curación, menor dificultad.</li>
+		</ul>
+
+		<ToneNote tone="neutral" title="Perfil tactico">
+			Son el consumible de desgaste sostenible. No suelen resolver una crisis brutal en el acto, pero son la pieza que mantiene operativo al grupo entre encuentros o durante coberturas breves.
+		</ToneNote>
+
+		<div className="not-prose overflow-x-auto rounded-2xl border border-fd-border">
+			<table className="w-full min-w-[640px] text-sm">
+				<thead className="bg-fd-secondary/50 text-left text-fd-muted-foreground">
+					<tr>
+						<th className="px-4 py-3 font-medium">Nombre</th>
+						<th className="px-4 py-3 font-medium">Calidad</th>
+						<th className="px-4 py-3 font-medium">Usos</th>
+						<th className="px-4 py-3 font-medium">Curación</th>
+						<th className="px-4 py-3 font-medium">Dificultad</th>
+						<th className="px-4 py-3 font-medium">Acción</th>
+						<th className="px-4 py-3 font-medium">Nota</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr className="border-t border-fd-border">
+						<td className="px-4 py-3">Medkit civil C-12</td>
+						<td className="px-4 py-3">Básica</td>
+						<td className="px-4 py-3">3</td>
+						<td className="px-4 py-3">1d6 PV</td>
+						<td className="px-4 py-3">15</td>
+						<td className="px-4 py-3">Mayor</td>
+						<td className="px-4 py-3">Barato, común en estaciones</td>
+					</tr>
+					<tr className="border-t border-fd-border">
+						<td className="px-4 py-3">Medkit táctico M-4</td>
+						<td className="px-4 py-3">Media</td>
+						<td className="px-4 py-3">4</td>
+						<td className="px-4 py-3">2d6 PV</td>
+						<td className="px-4 py-3">14</td>
+						<td className="px-4 py-3">Mayor</td>
+						<td className="px-4 py-3">Diseñado para combate de escuadra</td>
+					</tr>
+					<tr className="border-t border-fd-border">
+						<td className="px-4 py-3">Medkit quirúrgico Aegis</td>
+						<td className="px-4 py-3">Alta</td>
+						<td className="px-4 py-3">2</td>
+						<td className="px-4 py-3">3d6 PV</td>
+						<td className="px-4 py-3">13</td>
+						<td className="px-4 py-3">Mayor</td>
+						<td className="px-4 py-3">Coste alto, uso profesional</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<p><strong>Uso recomendado:</strong></p>
+		<ul>
+			<li><strong>Civil C-12</strong>: campañas pobres, estaciones, colonias y suministro masivo.</li>
+			<li><strong>Táctico M-4</strong>: unidad de campo, seguridad privada, escuadras preparadas.</li>
+			<li><strong>Aegis</strong>: entornos profesionales, trauma grave o personajes con acceso premium.</li>
+		</ul>
+	</Accordion>
+
+	<Accordion id="herramientas-de-trauma" title="Herramientas de trauma">
+		<p><strong>Uso típico:</strong></p>
+		<ul>
+			<li>No siempre curan PV directo.</li>
+			<li>Su función principal es detener deterioro o quitar penalizadores.</li>
+			<li>Son clave para estabilizar hasta poder dar tratamiento completo.</li>
+		</ul>
+
+		<ToneNote tone="rose" title="Mentalidad de uso">
+			Estas piezas no son lucidas, pero ganan combates. Si un personaje entra en espiral de deterioro, primero se estabiliza y luego se cura. Ese orden importa.
+		</ToneNote>
+
+		<div className="not-prose overflow-x-auto rounded-2xl border border-fd-border">
+			<table className="w-full min-w-[780px] text-sm">
+				<thead className="bg-fd-secondary/50 text-left text-fd-muted-foreground">
+					<tr>
+						<th className="px-4 py-3 font-medium">Nombre</th>
+						<th className="px-4 py-3 font-medium">Tipo</th>
+						<th className="px-4 py-3 font-medium">Efecto principal</th>
+						<th className="px-4 py-3 font-medium">Duración</th>
+						<th className="px-4 py-3 font-medium">Acción</th>
+						<th className="px-4 py-3 font-medium">Nota</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr className="border-t border-fd-border align-top">
+						<td className="px-4 py-3">Vendaje hemostático H-3</td>
+						<td className="px-4 py-3"><GlossaryTerm to="/docs/01-sistema/glosario/efectos-y-estados#sangrado" term="Sangrado" tooltip="Estado de hemorragia activa que empeora si no se trata." /></td>
+						<td className="px-4 py-3">Detiene <GlossaryTerm to="/docs/01-sistema/glosario/efectos-y-estados#sangrado" term="Sangrado" tooltip="Estado de hemorragia activa que empeora si no se trata." /></td>
+						<td className="px-4 py-3">1d6 turnos</td>
+						<td className="px-4 py-3">Menor</td>
+						<td className="px-4 py-3">Solución rápida de campaña</td>
+					</tr>
+					<tr className="border-t border-fd-border align-top">
+						<td className="px-4 py-3">Férula modular Kestrel</td>
+						<td className="px-4 py-3"><GlossaryTerm to="/docs/01-sistema/glosario/efectos-y-estados#fractura" term="Fractura" tooltip="Lesion o rotura osea que impone penalizadores hasta estabilizacion." /></td>
+						<td className="px-4 py-3">Suprime penalizador de <GlossaryTerm to="/docs/01-sistema/glosario/efectos-y-estados#fractura" term="Fractura" tooltip="Lesion o rotura osea que impone penalizadores hasta estabilizacion." /></td>
+						<td className="px-4 py-3">Hasta retiro</td>
+						<td className="px-4 py-3">Mayor</td>
+						<td className="px-4 py-3">Requiere ajuste inicial</td>
+					</tr>
+					<tr className="border-t border-fd-border align-top">
+						<td className="px-4 py-3">Torniquete de presión V-lock</td>
+						<td className="px-4 py-3"><GlossaryTerm to="/docs/01-sistema/glosario/efectos-y-estados#laceracion" term="Laceracion" tooltip="Herida profunda que puede seguir causando dano por turno." /></td>
+						<td className="px-4 py-3">Reduce daño de <GlossaryTerm to="/docs/01-sistema/glosario/efectos-y-estados#laceracion" term="Laceracion" tooltip="Herida profunda que puede seguir causando dano por turno." /> a la mitad</td>
+						<td className="px-4 py-3">1d6 turnos</td>
+						<td className="px-4 py-3">Menor</td>
+						<td className="px-4 py-3">Puede causar <GlossaryTerm to="/docs/01-sistema/glosario/efectos-y-estados#dolor" term="Dolor" tooltip="Penalizacion temporal por trauma o tratamiento invasivo." /> adicional</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<p><strong>Lectura rápida de mesa:</strong></p>
+		<ul>
+			<li><strong>Vendaje</strong>: primer gesto de emergencia, rápido y barato.</li>
+			<li><strong>Férula</strong>: inversión de tiempo para devolver funcionalidad.</li>
+			<li><strong>Torniquete</strong>: solución agresiva que compra minutos a costa de sufrimiento o secuelas.</li>
+		</ul>
+	</Accordion>
+
+	<Accordion id="inyectores" title="Inyectores">
+		<p><strong>Uso típico:</strong></p>
+		<ul>
+			<li>Aplicación rápida, generalmente en acción menor.</li>
+			<li>Curación o mejora inmediata de rendimiento.</li>
+			<li>Riesgo de secundarios en modelos potentes o repetidos.</li>
+		</ul>
+
+		<ToneNote tone="cyan" title="Advertencia">
+			Un inyector debe sentirse como una decision desesperada o muy calculada. Si no hay coste narrativo o tactico posterior, termina sustituyendo a todo lo demas.
+		</ToneNote>
+
+		<div className="not-prose overflow-x-auto rounded-2xl border border-fd-border">
+			<table className="w-full min-w-[780px] text-sm">
+				<thead className="bg-fd-secondary/50 text-left text-fd-muted-foreground">
+					<tr>
+						<th className="px-4 py-3 font-medium">Nombre</th>
+						<th className="px-4 py-3 font-medium">Efecto principal</th>
+						<th className="px-4 py-3 font-medium">Secundario posible</th>
+						<th className="px-4 py-3 font-medium">Acción</th>
+						<th className="px-4 py-3 font-medium">Riesgo</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr className="border-t border-fd-border align-top">
+						<td className="px-4 py-3">RegenShot Mk-I</td>
+						<td className="px-4 py-3">+1d6 PV inmediato</td>
+						<td className="px-4 py-3"><GlossaryTerm to="/docs/01-sistema/glosario/efectos-y-estados#cansado" term="Cansado" tooltip="Penalizador creciente por agotamiento acumulado." /> leve tras 1d6 turnos</td>
+						<td className="px-4 py-3">Menor</td>
+						<td className="px-4 py-3">Bajo</td>
+					</tr>
+					<tr className="border-t border-fd-border align-top">
+						<td className="px-4 py-3">NeuroStim P-9</td>
+						<td className="px-4 py-3">Ignora <GlossaryTerm to="/docs/01-sistema/glosario/efectos-y-estados#dolor" term="Dolor" tooltip="Penalizacion temporal por trauma o tratamiento invasivo." /> durante 1d6 turnos</td>
+						<td className="px-4 py-3"><GlossaryTerm to="/docs/01-sistema/glosario/efectos-y-estados#desorientacion" term="Desorientacion" tooltip="Desfase sensorial y mental al terminar el efecto estimulante." /> al terminar</td>
+						<td className="px-4 py-3">Menor</td>
+						<td className="px-4 py-3">Medio</td>
+					</tr>
+					<tr className="border-t border-fd-border align-top">
+						<td className="px-4 py-3">Combat Surge VX</td>
+						<td className="px-4 py-3">+2 a reflejos durante 1d6 turnos</td>
+						<td className="px-4 py-3"><GlossaryTerm to="/docs/01-sistema/glosario/efectos-y-estados#fatiga" term="Fatiga" tooltip="Caida brusca del rendimiento tras sobreesfuerzo quimico." /> fuerte y <GlossaryTerm to="/docs/01-sistema/glosario/efectos-y-estados#temblor" term="Temblor" tooltip="Inestabilidad motora que empeora acciones de precision." /> posterior</td>
+						<td className="px-4 py-3">Menor</td>
+						<td className="px-4 py-3">Alto</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<p><strong>Escalada sugerida:</strong></p>
+		<ul>
+			<li><strong>RegenShot</strong>: recuperacion rapida de emergencia.</li>
+			<li><strong>NeuroStim</strong>: ignorar dolor para rematar una accion clave.</li>
+			<li><strong>Combat Surge</strong>: decision de alto riesgo para romper el equilibrio del encuentro.</li>
+		</ul>
+	</Accordion>
+</Accordions>
+
+---
+
+## Plantilla de consumible
+
+Campos recomendados para nuevos objetos:
+
+- Nombre
+- Tipo (botiquín, herramienta de trauma, inyector)
+- Descripción breve
+- Usos
+- Efecto principal
+- Dificultad de aplicación (si aplica)
+- Coste de acción (mayor/menor)
+- Efectos secundarios (si aplica)
+
+<ToneNote tone="neutral" title="Regla practica">
+	Si estas diseñando un consumible nuevo, define primero su escena ideal. Luego decide si esa escena va de sostener, estabilizar o forzar. El resto de numeros deberia reforzar esa fantasia y no competir con ella.
+</ToneNote>
+
+## Reglas de uso en combate y fuera de combate
+
+- En combate, respeta coste de acción y dificultad de aplicación.
+- Fuera de combate, el DJ puede simplificar tiradas para acelerar ritmo.
+- Pifias y críticos pueden alterar resultado (especialmente botiquines).
+
+## Ver también
+
+<Cards>
+	<Card
+		title="Daño y curación"
+		description="Marco general de heridas, recuperación de PV y ritmo de tratamiento en partida."
+		href="/docs/01-sistema/danio-y-curacion"
+	/>
+	<Card
+		title="Compendio de drogas"
+		description="Sustancias de mejora, dependencia y coste fisiológico para escenas de presión."
+		href="/docs/01-sistema/compendio-drogas"
+	/>
+	<Card
+		title="Glosario de efectos y estados"
+		description="Referencia central de sangrado, fractura, dolor, fatiga y otros estados usados aquí."
+		href="/docs/01-sistema/glosario/efectos-y-estados"
+	/>
+</Cards>

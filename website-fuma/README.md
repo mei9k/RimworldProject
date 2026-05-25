@@ -2,6 +2,8 @@
 
 Sitio alternativo de documentacion con Next.js + Fumadocs.
 
+Aqui vive ya tanto la aplicacion como la documentacion fuente del proyecto.
+
 ## Comandos
 
 ```bash
@@ -9,12 +11,10 @@ npm run dev
 npm run build
 ```
 
-Antes de cada `dev` y `build`, el proyecto sincroniza automaticamente la carpeta raiz `../docs` dentro de `content/docs` y adapta el contenido para Fumadocs.
-
 ## Flujo de contenido
 
-- La fuente real sigue siendo `../docs`.
-- `npm run sync:docs` copia y adapta esos markdown a `content/docs`.
+- La fuente real es `content/docs`.
+- Los documentos Markdown y MDX se editan directamente dentro de `content/docs`.
 - El compendio medico ya usa tooltips React/MDX dentro de Fumadocs.
 
 ## Despliegue recomendado

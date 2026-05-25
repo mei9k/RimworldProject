@@ -1,0 +1,12 @@
+{
+  "title": "Documentacion",
+  "root": true,
+  "pagesIndex": "indice",
+  "pages": [
+    "indice",
+    "desarrollo-local",
+    "01-sistema",
+    "02-universo",
+    "03-partidas"
+  ]
+}

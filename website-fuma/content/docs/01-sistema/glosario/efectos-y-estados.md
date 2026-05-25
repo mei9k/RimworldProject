@@ -97,4 +97,4 @@ Necesidad compulsiva de repetir consumo o uso de sustancia/equipo. Puede generar
 
 ---
 
-Ver también: [Daño y curación](../danio-y-curacion.md), [Compendio de consumibles médicos](../compendio-consumibles-medicos.md), [Compendio de drogas](../compendio-drogas.md).
+Ver también: [Daño y curación](../danio-y-curacion.md), [Compendio de consumibles médicos](../compendio-consumibles-medicos.mdx), [Compendio de drogas](../compendio-drogas.md).

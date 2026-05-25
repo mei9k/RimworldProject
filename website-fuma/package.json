@@ -3,14 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "sync:docs": "node ./scripts/sync-docs.mjs",
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
     "types:check": "fumadocs-mdx && next typegen && tsc --noEmit",
-    "postinstall": "fumadocs-mdx",
-    "predev": "npm run sync:docs",
-    "prebuild": "npm run sync:docs"
+    "postinstall": "fumadocs-mdx"
   },
   "dependencies": {
     "fumadocs-core": "16.9.1",

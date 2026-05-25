@@ -156,7 +156,7 @@ Fuera de combate, la recuperación suele ser más estable y segura. En combate, 
 
 ## Consumibles de salud
 
-Compendio completo y plantillas en [Compendio de consumibles médicos](compendio-consumibles-medicos.md).
+Compendio completo y plantillas en [Compendio de consumibles médicos](compendio-consumibles-medicos.mdx).
 
 ### 8.1 Botiquín
 
@@ -242,7 +242,7 @@ Regla de uso:
 - [Tiradas y críticos](tiradas-y-criticos.md)
 - [Equipo e inventario](equipo-e-inventario.md)
 - [Prótesis y ciberimplantes](protesis-y-ciberimplantes.md)
-- [Compendio de consumibles médicos](compendio-consumibles-medicos.md)
+- [Compendio de consumibles médicos](compendio-consumibles-medicos.mdx)
 - [Compendio de drogas](compendio-drogas.md)
 - [Glosario de efectos y estados](glosario/efectos-y-estados.md)
 
