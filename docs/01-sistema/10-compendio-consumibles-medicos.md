@@ -1,3 +1,5 @@
+import GlossaryTerm from '@site/src/components/GlossaryTerm';
+
 # Compendio de consumibles médicos
 
 Catálogo de referencia para consumibles sanitarios en campaña.
@@ -21,7 +23,7 @@ Glosario de referencia: [Glosario de efectos y estados](glosario/efectos-y-estad
 En este sistema hay tres familias principales de consumibles médicos:
 
 - **Botiquines**: restauran PV mediante aplicación con material médico.
-- **Herramientas de trauma**: controlan estados concretos ([sangrado](glosario/efectos-y-estados.md#sangrado), [fractura](glosario/efectos-y-estados.md#fractura), [laceración](glosario/efectos-y-estados.md#laceración)).
+- **Herramientas de trauma**: controlan estados concretos (<GlossaryTerm to="/01-sistema/glosario/efectos-y-estados#sangrado" term="Sangrado" tooltip="Estado de hemorragia activa que empeora si no se trata." />, <GlossaryTerm to="/01-sistema/glosario/efectos-y-estados#fractura" term="Fractura" tooltip="Lesion o rotura osea que impone penalizadores hasta estabilizacion." />, <GlossaryTerm to="/01-sistema/glosario/efectos-y-estados#laceracion" term="Laceracion" tooltip="Herida profunda que puede seguir causando dano por turno." />).
 - **Inyectores**: efectos inmediatos, rápidos de aplicar, con posible coste secundario.
 
 ## Cómo se usan en partida
@@ -66,9 +68,9 @@ Uso típico:
 
 | Nombre | Tipo | Efecto principal | Duración | Acción | Nota |
 | --- | --- | --- | --- | --- | --- |
-| Vendaje hemostático H-3 | [Sangrado](glosario/efectos-y-estados.md#sangrado) | Detiene [Sangrado](glosario/efectos-y-estados.md#sangrado) | 1d6 turnos | Menor | Solución rápida de campaña |
-| Férula modular Kestrel | [Fractura](glosario/efectos-y-estados.md#fractura) | Suprime penalizador de [Fractura](glosario/efectos-y-estados.md#fractura) | Hasta retiro | Mayor | Requiere ajuste inicial |
-| Torniquete de presión V-lock | [Laceración](glosario/efectos-y-estados.md#laceración) | Reduce daño de [Laceración](glosario/efectos-y-estados.md#laceración) a la mitad | 1d6 turnos | Menor | Puede causar [Dolor](glosario/efectos-y-estados.md#dolor) adicional |
+| Vendaje hemostático H-3 | <GlossaryTerm to="/01-sistema/glosario/efectos-y-estados#sangrado" term="Sangrado" tooltip="Estado de hemorragia activa que empeora si no se trata." /> | Detiene <GlossaryTerm to="/01-sistema/glosario/efectos-y-estados#sangrado" term="Sangrado" tooltip="Estado de hemorragia activa que empeora si no se trata." /> | 1d6 turnos | Menor | Solución rápida de campaña |
+| Férula modular Kestrel | <GlossaryTerm to="/01-sistema/glosario/efectos-y-estados#fractura" term="Fractura" tooltip="Lesion o rotura osea que impone penalizadores hasta estabilizacion." /> | Suprime penalizador de <GlossaryTerm to="/01-sistema/glosario/efectos-y-estados#fractura" term="Fractura" tooltip="Lesion o rotura osea que impone penalizadores hasta estabilizacion." /> | Hasta retiro | Mayor | Requiere ajuste inicial |
+| Torniquete de presión V-lock | <GlossaryTerm to="/01-sistema/glosario/efectos-y-estados#laceracion" term="Laceracion" tooltip="Herida profunda que puede seguir causando dano por turno." /> | Reduce daño de <GlossaryTerm to="/01-sistema/glosario/efectos-y-estados#laceracion" term="Laceracion" tooltip="Herida profunda que puede seguir causando dano por turno." /> a la mitad | 1d6 turnos | Menor | Puede causar <GlossaryTerm to="/01-sistema/glosario/efectos-y-estados#dolor" term="Dolor" tooltip="Penalizacion temporal por trauma o tratamiento invasivo." /> adicional |
 
 ---
 
@@ -84,9 +86,9 @@ Uso típico:
 
 | Nombre | Efecto principal | Secundario posible | Acción | Riesgo |
 | --- | --- | --- | --- | --- |
-| RegenShot Mk-I | +1d6 PV inmediato | [Cansado](glosario/efectos-y-estados.md#cansado) leve tras 1d6 turnos | Menor | Bajo |
-| NeuroStim P-9 | Ignora [Dolor](glosario/efectos-y-estados.md#dolor) durante 1d6 turnos | [Desorientación](glosario/efectos-y-estados.md#desorientación) al terminar | Menor | Medio |
-| Combat Surge VX | +2 a reflejos durante 1d6 turnos | [Fatiga](glosario/efectos-y-estados.md#fatiga) fuerte y [Temblor](glosario/efectos-y-estados.md#temblor) posterior | Menor | Alto |
+| RegenShot Mk-I | +1d6 PV inmediato | <GlossaryTerm to="/01-sistema/glosario/efectos-y-estados#cansado" term="Cansado" tooltip="Penalizador creciente por agotamiento acumulado." /> leve tras 1d6 turnos | Menor | Bajo |
+| NeuroStim P-9 | Ignora <GlossaryTerm to="/01-sistema/glosario/efectos-y-estados#dolor" term="Dolor" tooltip="Penalizacion temporal por trauma o tratamiento invasivo." /> durante 1d6 turnos | <GlossaryTerm to="/01-sistema/glosario/efectos-y-estados#desorientacion" term="Desorientacion" tooltip="Desfase sensorial y mental al terminar el efecto estimulante." /> al terminar | Menor | Medio |
+| Combat Surge VX | +2 a reflejos durante 1d6 turnos | <GlossaryTerm to="/01-sistema/glosario/efectos-y-estados#fatiga" term="Fatiga" tooltip="Caida brusca del rendimiento tras sobreesfuerzo quimico." /> fuerte y <GlossaryTerm to="/01-sistema/glosario/efectos-y-estados#temblor" term="Temblor" tooltip="Inestabilidad motora que empeora acciones de precision." /> posterior | Menor | Alto |
 
 ---
 
