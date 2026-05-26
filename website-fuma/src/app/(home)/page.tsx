@@ -17,8 +17,8 @@ export default function HomePage() {
         >
           Abrir indice
         </Link>
-        <Link href="/docs/01-sistema/compendio-consumibles-medicos" className="underline">
-          Ver tooltips del compendio
+        <Link href="/docs/Compendios/material-sanitario" className="underline">
+          Ver material sanitario
         </Link>
       </div>
     </div>

@@ -73,5 +73,5 @@ Modelo sugerido:
 - Tras cierto umbral, aparece tirada de dependencia.
 - La abstinencia puede generar penalizadores temporales.
 
-Ver también: [Daño y curación](danio-y-curacion.md), [Compendio de consumibles médicos](compendio-consumibles-medicos.mdx).
+Ver también: [Daño y curación](danio-y-curacion.md), [Material Sanitario](../Compendios/material-sanitario.mdx).
 

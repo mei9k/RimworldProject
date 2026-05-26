@@ -6,6 +6,7 @@ Repositorio de documentación para un sistema de rol sci-fi futurista-realista b
 
 - [Índice general](website-fuma/content/docs/indice.md)
 - [Guía de desarrollo local](website-fuma/content/docs/desarrollo-local.md)
+- [Material Sanitario](website-fuma/content/docs/Compendios/material-sanitario.mdx)
 - [Resumen inicial del proyecto](mainOverview.md)
 - [Sistema de juego](website-fuma/content/docs/01-sistema/concepto-y-estilo.md)
 - [Universo y lore](website-fuma/content/docs/02-universo/resumen.md)

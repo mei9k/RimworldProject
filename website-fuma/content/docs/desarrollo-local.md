@@ -43,7 +43,7 @@ Trabaja siempre en `website-fuma/content/docs/`.
 Ejemplos:
 
 - `website-fuma/content/docs/indice.md`
-- `website-fuma/content/docs/01-sistema/compendio-consumibles-medicos.mdx`
+- `website-fuma/content/docs/Compendios/material-sanitario.mdx`
 - `website-fuma/content/docs/01-sistema/glosario/efectos-y-estados.md`
 
 ### 2. Levantar la web en local
@@ -64,7 +64,7 @@ URL local habitual:
 Ejemplos utiles:
 
 - `http://localhost:3000/docs/indice`
-- `http://localhost:3000/docs/01-sistema/compendio-consumibles-medicos`
+- `http://localhost:3000/docs/Compendios/material-sanitario`
 - `http://localhost:3000/docs/01-sistema/danio-y-curacion`
 
 ## Validacion antes de subir cambios
@@ -104,8 +104,8 @@ Revisar:
 
 En Fumadocs, la URL sale del arbol dentro de `content/docs`. Por ejemplo:
 
-- `website-fuma/content/docs/01-sistema/compendio-consumibles-medicos.mdx`
-- ruta resultante: `/docs/01-sistema/compendio-consumibles-medicos`
+- `website-fuma/content/docs/Compendios/material-sanitario.mdx`
+- ruta resultante: `/docs/Compendios/material-sanitario`
 
 ## Flujo recomendado antes de pedir cambios grandes
 
